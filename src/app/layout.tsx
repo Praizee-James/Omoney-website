@@ -2,7 +2,7 @@
 import type { Metadata } from 'next';
 import { AuthProvider } from '@/context/AuthContext';
 import { TransactionProvider } from '@/context/TransactionContext';
-import './globals.css';
+import './global.css';
 
 export const metadata: Metadata = {
   title: "O'Money - Modern Digital Banking",
