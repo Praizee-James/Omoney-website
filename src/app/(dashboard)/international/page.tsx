@@ -105,7 +105,7 @@ export default function InternationalPage() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="max-w-2xl mx-auto space-y-6"
+      className="max-w-2xl mx-auto space-y-6"{...{} as any}
     >
       {/* Header */}
       <div>
@@ -120,7 +120,7 @@ export default function InternationalPage() {
 
       {/* Exchange Rate Calculator */}
       {exchangeRate && watchedAmount > 0 && (
-        <Card className="bg-gradient-to-r from-blue-50 to-emerald-50 dark:from-blue-900/20 dark:to-emerald-900/20 border-blue-200 dark:border-blue-800">
+        <Card className="bg-linear-to-r from-blue-50 to-emerald-50 dark:from-blue-900/20 dark:to-emerald-900/20 border-blue-200 dark:border-blue-800">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-xs text-gray-500 mb-1">You send</p>
@@ -284,7 +284,7 @@ export default function InternationalPage() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: 'spring', stiffness: 200, delay: 0.2 }}
-            className="w-20 h-20 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mx-auto mb-6"
+            className="w-20 h-20 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mx-auto mb-6"{...{} as any}
           >
             <HiCheck size={40} className="text-emerald-600" />
           </motion.div>

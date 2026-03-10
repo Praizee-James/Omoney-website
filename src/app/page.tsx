@@ -118,7 +118,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-gray-900 dark:text-white leading-tight mb-6"
+              className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-gray-900 dark:text-white leading-tight mb-6" {...{} as any}
             >
               Banking Made{' '}
               <span className="gradient-text">Simple</span>,{' '}
@@ -131,7 +131,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg lg:text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto"
+              className="text-lg lg:text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto" {...{} as any}
             >
               Send and receive money instantly across Nigeria and worldwide.
               Experience the future of digital banking with O'Money.
@@ -141,7 +141,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4"
+              className="flex flex-col sm:flex-row items-center justify-center gap-4" {...{} as any}
             >
               <Link href="/signup">
                 <Button size="lg" rightIcon={<HiArrowRight />}>
@@ -160,7 +160,7 @@ export default function HomePage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="mt-8 inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-xl text-sm text-gray-500"
+              className="mt-8 inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-xl text-sm text-gray-500" {...{} as any}
             >
               <span>Demo: demo@omoney.com / Demo@1234</span>
             </motion.div>
@@ -171,7 +171,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
+            className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"{...{} as any}
           >
             {stats.map((stat, i) => (
               <div key={i} className="text-center p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-sm">
@@ -206,7 +206,7 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 lg:p-8 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl hover:shadow-xl hover:border-emerald-200 dark:hover:border-emerald-800/50 transition-all duration-300 group"
+                className="p-6 lg:p-8 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl hover:shadow-xl hover:border-emerald-200 dark:hover:border-emerald-800/50 transition-all duration-300 group"{...{} as any}
               >
                 <div className="w-14 h-14 rounded-2xl bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                   <feature.icon size={24} className="text-emerald-600" />
@@ -226,7 +226,7 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-800 via-emerald-700 to-emerald-600 p-8 lg:p-16 text-center">
+          <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-emerald-800 via-emerald-700 to-emerald-600 p-8 lg:p-16 text-center">
             <div className="absolute inset-0 opacity-10">
               <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-white/20" />
               <div className="absolute -left-10 -bottom-10 w-48 h-48 rounded-full bg-white/10" />

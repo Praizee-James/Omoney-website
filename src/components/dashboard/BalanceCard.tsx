@@ -26,7 +26,7 @@ export default function BalanceCard() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-800 via-emerald-700 to-emerald-600 p-6 lg:p-8 text-white shadow-2xl shadow-emerald-900/30"
+      className="relative overflow-hidden rounded-3xl bg-linear-to-br from-emerald-800 via-emerald-700 to-emerald-600 p-6 lg:p-8 text-white shadow-2xl shadow-emerald-900/30"{...{} as any}
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">

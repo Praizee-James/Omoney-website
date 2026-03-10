@@ -58,7 +58,7 @@ export default function TopNav({ onMenuClick }: TopNavProps) {
                 initial={{ width: 0, opacity: 0 }}
                 animate={{ width: 240, opacity: 1 }}
                 exit={{ width: 0, opacity: 0 }}
-                className="hidden sm:block overflow-hidden"
+                className="hidden sm:block overflow-hidden"{...{} as any}
               >
                 <input
                   type="text"
@@ -114,7 +114,7 @@ export default function TopNav({ onMenuClick }: TopNavProps) {
                     initial={{ opacity: 0, y: 10, scale: 0.95 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                    className="absolute right-0 top-12 w-80 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-2xl overflow-hidden z-20"
+                    className="absolute right-0 top-12 w-80 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-2xl overflow-hidden z-20"{...{} as any}
                   >
                     <div className="p-4 border-b border-gray-200 dark:border-gray-800">
                       <h3 className="font-semibold text-gray-900 dark:text-white">Notifications</h3>

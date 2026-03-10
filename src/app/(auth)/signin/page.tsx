@@ -45,7 +45,7 @@ export default function SignInPage() {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-full max-w-md"
+          className="w-full max-w-md"  {...{} as any}
         >
           <Logo size="lg" className="mb-8" />
 
@@ -60,7 +60,7 @@ export default function SignInPage() {
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl text-sm text-red-600 dark:text-red-400"
+              className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl text-sm text-red-600 dark:text-red-400"  {...{} as any}
             >
               {error}
             </motion.div>
@@ -127,7 +127,7 @@ export default function SignInPage() {
       </div>
 
       {/* Right Side - Visual */}
-      <div className="hidden lg:flex flex-1 items-center justify-center bg-gradient-to-br from-emerald-800 via-emerald-700 to-emerald-600 relative overflow-hidden">
+      <div className="hidden lg:flex flex-1 items-center justify-center bg-linear-to-br from-emerald-800 via-emerald-700 to-emerald-600 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-20 right-20 w-72 h-72 bg-white/5 rounded-full blur-xl" />
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-white/5 rounded-full blur-xl" />
@@ -138,7 +138,7 @@ export default function SignInPage() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="relative z-10 text-center text-white p-12 max-w-lg"
+          className="relative z-10 text-center text-white p-12 max-w-lg"  {...{} as any}
         >
           <div className="w-20 h-20 rounded-2xl bg-white/10 backdrop-blur-xl flex items-center justify-center mx-auto mb-8">
             <span className="text-4xl font-display font-bold">O'</span>

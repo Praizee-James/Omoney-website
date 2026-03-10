@@ -118,7 +118,7 @@ export default function TransferPage() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="max-w-2xl mx-auto space-y-6"
+      className="max-w-2xl mx-auto space-y-6"{...{} as any}
     >
       {/* Header */}
       <div>
@@ -147,12 +147,12 @@ export default function TransferPage() {
             <button
               key={ben.id}
               onClick={() => handleSelectBeneficiary(ben)}
-              className="flex-shrink-0 flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+              className="shrink-0 flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
             >
               <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-700 dark:text-emerald-400 font-bold text-sm">
                 {ben.accountName.split(' ').map(n => n[0]).join('')}
               </div>
-              <span className="text-xs text-gray-600 dark:text-gray-400 max-w-[80px] truncate">
+              <span className="text-xs text-gray-600 dark:text-gray-400 max-w-20 truncate">
                 {ben.accountName.split(' ')[0]}
               </span>
             </button>
@@ -297,7 +297,7 @@ export default function TransferPage() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: 'spring', stiffness: 200, delay: 0.2 }}
-            className="w-20 h-20 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mx-auto mb-6"
+            className="w-20 h-20 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mx-auto mb-6"{...{} as any}
           >
             <HiCheck size={40} className="text-emerald-600" />
           </motion.div>

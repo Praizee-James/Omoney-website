@@ -15,7 +15,7 @@ export default function DashboardPage() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="space-y-6 lg:space-y-8"
+      className="space-y-6 lg:space-y-8"{...{} as any}
     >
       {/* Balance & Quick Actions */}
       <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">

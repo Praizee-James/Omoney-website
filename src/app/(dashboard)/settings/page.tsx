@@ -58,7 +58,7 @@ export default function SettingsPage() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="space-y-6"
+      className="space-y-6"{...{} as any}
     >
       {/* Header */}
       <div>
@@ -103,7 +103,7 @@ export default function SettingsPage() {
         <div className="lg:col-span-3 space-y-6">
           {/* Profile Section */}
           {activeSection === 'profile' && (
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-6"{...{} as any}>
               <Card>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Personal Information</h3>
 
@@ -190,7 +190,7 @@ export default function SettingsPage() {
 
           {/* Security Section */}
           {activeSection === 'security' && (
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-6"{...{} as any}>
               <Card>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Security Settings</h3>
                 <div className="space-y-4">
@@ -277,7 +277,7 @@ export default function SettingsPage() {
 
           {/* Preferences Section */}
           {activeSection === 'preferences' && (
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-6"{...{} as any}>
               <Card>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Display Preferences</h3>
                 <div className="space-y-4">

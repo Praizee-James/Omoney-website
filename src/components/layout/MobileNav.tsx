@@ -35,7 +35,7 @@ export default function MobileNav() {
               {isActive && (
                 <motion.div
                   layoutId="mobile-nav-indicator"
-                  className="absolute -top-2 w-8 h-1 bg-emerald-600 rounded-full"
+                  className="absolute -top-2 w-8 h-1 bg-emerald-600 rounded-full"{...{} as any}
                   transition={{ duration: 0.2 }}
                 />
               )}

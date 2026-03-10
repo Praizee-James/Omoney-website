@@ -38,7 +38,7 @@ export default function CardsPage() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="space-y-6"
+      className="space-y-6"{...{} as any}
     >
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -68,7 +68,7 @@ export default function CardsPage() {
             initial={{ opacity: 0, rotateY: -10 }}
             animate={{ opacity: 1, rotateY: 0 }}
             transition={{ duration: 0.5 }}
-            className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 via-gray-800 to-emerald-900 p-6 lg:p-8 text-white aspect-[1.6/1] max-w-md shadow-2xl"
+            className="relative overflow-hidden rounded-2xl bg-linear-to-br from-gray-900 via-gray-800 to-emerald-900 p-6 lg:p-8 text-white aspect-[1.6/1] max-w-md shadow-2xl"{...{} as any}
           >
             <div className="absolute inset-0 opacity-20">
               <div className="absolute top-5 right-5 w-40 h-40 rounded-full bg-emerald-400/30 blur-2xl" />
@@ -91,7 +91,7 @@ export default function CardsPage() {
               </div>
 
               {/* Chip */}
-              <div className="w-10 h-8 rounded bg-gradient-to-br from-yellow-300 to-yellow-500 opacity-80" />
+              <div className="w-10 h-8 rounded bg-linear-to-br from-yellow-300 to-yellow-500 opacity-80" />
 
               <div>
                 <p className="text-lg font-mono tracking-[0.2em] mb-2">

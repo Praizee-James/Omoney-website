@@ -62,7 +62,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
                     {isActive && (
                       <motion.div
                         layoutId="sidebar-indicator"
-                        className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-emerald-600 rounded-r-full"
+                        className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-emerald-600 rounded-r-full"{...{} as any}
                         transition={{ duration: 0.2 }}
                       />
                     )}
@@ -97,7 +97,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden"
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden"{...{} as any}
             onClick={onClose}
           />
           <motion.aside
@@ -105,7 +105,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             animate={{ x: 0 }}
             exit={{ x: -280 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="fixed inset-y-0 left-0 w-72 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 z-50 lg:hidden"
+            className="fixed inset-y-0 left-0 w-72 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 z-50 lg:hidden"{...{} as any}
           >
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between p-6">
